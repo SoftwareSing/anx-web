@@ -3,6 +3,8 @@ import * as bodyParser from 'body-parser';
 import * as path from 'path';
 import * as http from 'http';
 
+import { apiRouter } from 'server/router/router';
+
 
 const app = express();
 
@@ -13,6 +15,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Point static path
 app.use('/public', express.static(path.join(__dirname, '../..', 'public')));
 app.use(express.static(path.join(__dirname, '..', 'client')));
+
+app.use('/api', apiRouter);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
