@@ -93,10 +93,7 @@
       true,
       "always"
     ],
-    "triple-equals": [
-      true,
-      "allow-null-check"
-    ],
+    "triple-equals": true,
     "typedef-whitespace": [
       true,
       {
@@ -108,7 +105,12 @@
       }
     ],
     "unified-signatures": true,
-    "variable-name": false,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-trailing-underscore"
+    ],
     "whitespace": [
       true,
       "check-branch",
@@ -126,6 +128,27 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "prefer-for-of": true,
+    "await-promise": true,
+    "no-conditional-assignment": true,
+    "no-for-in-array": true,
+    "no-invalid-template-strings": true,
+    "no-default-export": true,
+    "no-duplicate-imports": true,
+    "align": [
+      true,
+      "parameters",
+      "arguments",
+      "statements",
+      "members",
+      "elements"
+    ],
+    "encoding": true,
+    "new-parens": true,
+    "no-consecutive-blank-lines": [
+      true,
+      6
+    ]
   }
 }
