@@ -1,27 +1,37 @@
 # AnxWeb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+可以透過 `npm start` 來編譯並開啟伺服器
 
-## Development server
+使用 `npm run build` 來編譯在 [client](/client) 與 [server](/server) 內的code，編譯後的檔案預設存放在 [dist](/dist) 資料夾中
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+使用 `npm run serve` 來執行編譯完成的code
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 檔案結構
 
-## Build
+### client
+[client](/client) 是前端的code，使用angular開發
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+單獨編譯前端時，可以輸入 `npm run build-client`
 
-## Running unit tests
+### server
+[server](/server) 是後端的code，使用express開發
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+單獨編譯後端時，可以輸入 `npm run build-server`
 
-## Running end-to-end tests
+### public
+[public](/public) 是靜態檔案，伺服器會透過 `/public/:filename` 的路徑提供檔案
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+舉例來說，如果資料夾中有一個 `picture.jpg`
 
-## Further help
+那他的路徑會是 `127.0.0.1/public/picture.jpg`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## tslint
+有關tslint的說明，參考以下連結
+
+[TSLint配置小结](https://zhuanlan.zhihu.com/p/29970355) (簡中)
+
+[TSLint 官方](https://palantir.github.io/tslint/rules/) (英文, 官網)
+
+[eslint](http://eslint.cn/) (eslint有小部分相同規則可參考)
