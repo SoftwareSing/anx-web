@@ -3,11 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "ng-start": "ng serve",
+    "ng-build": "ng build",
+    "ng-test": "ng test",
+    "ng-lint": "ng lint",
+    "ng-e2e": "ng e2e",
+    "tsc": "tsc",
+    "server-tsc": "cd server & tsc",
+    "build": "ng build --prod & npm run server-tsc",
+    "serve": "node ./dist/server/server.js",
+    "start": "npm run build & npm run serve"
   },
   "private": true,
   "dependencies": {
@@ -19,7 +24,9 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "body-parser": "^1.18.3",
     "core-js": "^2.5.4",
+    "express": "^4.16.4",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
@@ -29,9 +36,9 @@
     "@angular/cli": "~7.2.2",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^8.9.5",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
