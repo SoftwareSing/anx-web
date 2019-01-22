@@ -18,5 +18,13 @@
       "es2018",
       "dom"
     ]
-  }
+  },
+  "include": [
+    "server",
+    "client"
+  ],
+  "exclude": [
+      "node_modules",
+      "dist"
+  ]
 }

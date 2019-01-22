@@ -1,7 +1,7 @@
-import * as express from 'express';
 import * as bodyParser from 'body-parser';
-import * as path from 'path';
+import * as express from 'express';
 import * as http from 'http';
+import * as path from 'path';
 
 import { apiRouter } from 'server/router/router';
 
