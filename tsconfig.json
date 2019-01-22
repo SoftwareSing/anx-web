@@ -17,6 +17,12 @@
     "lib": [
       "es2018",
       "dom"
+    ],
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin",
+        "alwaysShowRuleFailuresAsWarnings": false
+      }
     ]
   },
   "include": [
@@ -24,7 +30,7 @@
     "client"
   ],
   "exclude": [
-      "node_modules",
-      "dist"
+    "node_modules",
+    "dist"
   ]
 }
