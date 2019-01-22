@@ -6,6 +6,7 @@
     "tslint:recommended",
     "tslint-clean-code"
   ],
+  "defaultSeverity": "error",
   "jsRules": {},
   "rules": {
     "import-blacklist": [
