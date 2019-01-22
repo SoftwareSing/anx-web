@@ -1,4 +1,6 @@
 # AnxWeb
+[![CI](https://travis-ci.org/SoftwareSing/anx-web.svg?branch=master)](https://travis-ci.org/SoftwareSing/anx-web)
+
 
 可以透過 `npm start` 來編譯並開啟伺服器
 
@@ -39,4 +41,7 @@
 
 ## 測試
 目前的測試只有tslint，之後可能增加
+
 可以透過指令 `npm test` 執行測試
+
+每次發送 merge request 時將會自動測試
