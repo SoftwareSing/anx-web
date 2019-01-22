@@ -27,7 +27,7 @@
 那他的路徑會是 `127.0.0.1/public/picture.jpg`
 
 
-## tslint
+## TSLint
 有關tslint的說明，參考以下連結
 
 [TSLint配置小结](https://zhuanlan.zhihu.com/p/29970355) (簡中)
@@ -35,3 +35,8 @@
 [TSLint 官方](https://palantir.github.io/tslint/rules/) (英文, 官網)
 
 [eslint](http://eslint.cn/) (eslint有小部分相同規則可參考)
+
+
+## 測試
+目前的測試只有tslint，之後可能增加
+可以透過指令 `npm test` 執行測試
