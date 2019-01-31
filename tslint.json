@@ -60,6 +60,7 @@
       }
     ],
     "object-literal-sort-keys": false,
-    "member-access": false
+    "member-access": false,
+    "no-empty": false
   }
 }
