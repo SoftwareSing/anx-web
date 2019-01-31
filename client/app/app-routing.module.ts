@@ -14,7 +14,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: 'test',
+    path: 'management',
     component: ManagementLayoutComponent,
     children: [
       {path: '', component: HomeComponent}
