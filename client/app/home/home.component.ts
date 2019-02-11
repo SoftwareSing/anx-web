@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // 這邊應該要配合api，後端會回傳某folder里的所有圖片的url，這樣就可以在後台管理slider圖片
     this.images = [
       { title: 'Slide 1', url: 'assets/slider/img/banner0.jpg' },
       { title: 'Slide 2', url: 'assets/slider/img/banner2.jpg' },
