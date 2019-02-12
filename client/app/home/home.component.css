@@ -3,3 +3,11 @@
     /* height: 100%; */
     width: 100%;
 }
+
+caption {
+    caption-side: top;
+    font-size: 24px;
+    color: black;
+
+    border-bottom: 5px solid lightgreen;
+}
