@@ -1,4 +1,4 @@
-.carousel-item img{
+.carousel-item img {
     height: 600px;
     /* height: 100%; */
     width: 100%;
@@ -8,6 +8,33 @@ caption {
     caption-side: top;
     font-size: 24px;
     color: black;
-
     border-bottom: 5px solid lightgreen;
+}
+
+.carousel-control-prev {
+    width: 10%;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .0001) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+
+.carousel-control-next {
+    width: 10%;
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .3) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .3) 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .3) 100%);
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    color: rgb(235, 255, 247);
+    opacity: 0.2;
+}
+
+.carousel-control-prev:hover .fa-angle-left{
+    opacity: 0.8;
+}
+
+.carousel-control-next:hover .fa-angle-right{
+    opacity: 0.8;
 }
