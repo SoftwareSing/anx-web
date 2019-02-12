@@ -1,3 +1,33 @@
 footer {
     background-color: #DCF0EF;
+    padding: 5px 0px;
+}
+
+h6 {
+    border-bottom: 5px solid lightgreen;
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    
+}
+
+.contact > span {
+    display:inline-block;
+}
+
+#address {
+    padding-right:25px;
+    font-size:14px;
+}
+
+.contactIcon {
+    margin:5px;
+}
+
+.facebook {
+    color: dodgerblue;
+}
+
+.line {
+    color: green;
 }
