@@ -3,6 +3,9 @@
     /* height: 100%; */
     width: 100%;
 }
+.carousel > * {
+    border-radius: 10px;
+}
 
 caption {
     caption-side: top;
@@ -31,10 +34,16 @@ caption {
     opacity: 0.2;
 }
 
-.carousel-control-prev:hover .fa-angle-left{
+.carousel-control-prev:hover .fa-angle-left {
     opacity: 0.8;
 }
 
-.carousel-control-next:hover .fa-angle-right{
+.carousel-control-next:hover .fa-angle-right {
     opacity: 0.8;
+}
+
+.content-table {
+    border: 2px solid rgb(179, 184, 178);
+    padding: 10px;
+    margin: 10px 0px;
 }
