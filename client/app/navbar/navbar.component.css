@@ -4,22 +4,19 @@ body {
 
 .navbar {
     margin-top: 20px;
-    background: url("../../../public/image/top.png");
-    background-repeat: no-repeat;
-    min-height: 130px;
+    background: #58baa2;
+    background: -moz-linear-gradient(left, #58baa2 0%, #1879b2 100%);
+    background: -webkit-linear-gradient(left, #58baa2 0%, #1879b2 100%);
+    background: linear-gradient(to right, #58baa2 0%, #1879b2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58baa2', endColorstr='#1879b2', GradientType=1);
+}
+
+.navbar-brand>img {
+    height: 120px;
 }
 
 .custom-toggler {
     border-color: black;
-}
-
-@media (max-width: 991px) {
-    .navbar-nav {
-        background-color: #f5f5f5;
-    }
-    .navbar-header {
-        margin-bottom: 90px;
-    }
 }
 
 @media (min-width: 992px) {
@@ -32,9 +29,14 @@ body {
     }
 }
 
-@media (max-width: 319px) {
-    .navbar {
-        background: none;
-        /*can be other image*/
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: #f5f5f5;
+    }
+}
+
+@media (max-width: 452px) {
+    .navbar-brand>img {
+        height: 60px;
     }
 }
