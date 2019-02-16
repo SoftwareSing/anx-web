@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
 import { ManagementLayoutComponent } from './layout/management-layout/management-layout.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     FooterComponent,
     HomeLayoutComponent,
     ManagementLayoutComponent,
-    CoursesComponent
+    CoursesComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
