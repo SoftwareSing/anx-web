@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CoursesComponent } from 'client/app/courses/courses.component';
-import { NewsComponent } from 'client/app/news/news.component';
+import { CoursesComponent } from 'client/app/coursesTable/coursesTable.component';
+import { NewsComponent } from 'client/app/newsTable/newsTable.component';
 import { HomeComponent } from './home/home.component';
 import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
 import { ManagementLayoutComponent } from './layout/management-layout/management-layout.component';

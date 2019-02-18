@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FakeTableData } from 'client/app/fakeTableData';
-import { Category } from 'client/app/model/category';
 import { Course } from 'client/app/model/course';
 import { TableListComponent } from 'client/app/table-list/table-list.component';
 
