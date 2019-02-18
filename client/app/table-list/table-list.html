@@ -6,10 +6,10 @@
           <h4>{{superCategory.name}}</h4>
         </div>
         <div class="list-group list-group-flush">
-          <a class="list-group-item list-group-item-action" *ngFor="let category of superCategory.categories"
-            [class.active]="category === selectedCategory" (click)="onSelect(category)" routerLink="#">
+          <a class="list-group-item list-group-item-action" *ngFor="let category of superCategory.items"
+            [class.active]="category === selectedCategory" (click)="onSelect(category)" routerLink="./">
             {{category.name}}
-            <span class="badge badge-secondary badge-pill">{{category.courses.length}}</span>
+            <span class="badge badge-secondary badge-pill">{{category.items.length}}</span>
           </a>
         </div>
       </div>
@@ -38,18 +38,18 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let course of selectedCategory.courses">
+              <tr *ngFor="let item of selectedCategory.items">
                 <td *ngFor="let title of tableTitle | keyvalue:withoutSort;index as i">
                   <span class="badge badge-primary" *ngIf="i===0; else linkBlock">
-                    {{course[title.key]}}
+                    {{item[title.key]}}
                   </span>
                   <ng-template #linkBlock>
                     <a routerLink="#" *ngIf="i===1; else normalBlock">
-                      {{course[title.key]}}
+                      {{item[title.key]}}
                     </a>
                   </ng-template>
                   <ng-template #normalBlock>
-                    {{course[title.key]}}
+                    {{item[title.key]}}
                   </ng-template>
                 </td>
               </tr>

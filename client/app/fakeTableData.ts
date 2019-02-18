@@ -1,7 +1,6 @@
 
 import { Category } from 'client/app/model/category';
 import { Course } from 'client/app/model/course';
-import { SuperCategory } from 'client/app/model/superCategory';
 
 export class FakeTableData {
   coursesA: Course[] = [
@@ -19,7 +18,7 @@ export class FakeTableData {
     }
   ];
 
-  categoryA: Category = { name: '推廣教育中心', courses: this.coursesA };
+  categoryA: Category<Course> = { name: '推廣教育中心', items: this.coursesA };
 
   coursesB: Course[] = [
     {
@@ -36,14 +35,14 @@ export class FakeTableData {
     }
   ];
 
-  categoryB: Category = { name: '資中', courses: this.coursesB };
-  categoryC: Category = { name: 'C', courses: this.coursesA };
-  categoryD: Category = { name: 'D', courses: this.coursesB };
+  categoryB: Category<Course> = { name: '資中', items: this.coursesB };
+  categoryC: Category<Course> = { name: 'C', items: this.coursesA };
+  categoryD: Category<Course> = { name: 'D', items: this.coursesB };
 
 
-  superCategory: SuperCategory[] = [
-    { name: '課程單位', categories: [this.categoryA, this.categoryB] },
-    { name: '課程分類', categories: [this.categoryC, this.categoryD] }
+  superCategory: Array<Category<Category<Course>>> = [
+    { name: '課程單位', items: [this.categoryA, this.categoryB] },
+    { name: '課程分類', items: [this.categoryC, this.categoryD] }
   ];
 
 }
