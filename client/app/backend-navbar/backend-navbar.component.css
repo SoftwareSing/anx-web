@@ -1,0 +1,11 @@
+nav {
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.navbar-brand {
+    color: #fff;
+    font-size: 40px;
+}

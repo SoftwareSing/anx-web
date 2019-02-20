@@ -11,6 +11,8 @@ import { HomeLayoutComponent } from './layout/home-layout/home-layout.component'
 import { ManagementLayoutComponent } from './layout/management-layout/management-layout.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NewsComponent } from './newsTable/newsTable.component';
+import { BackendNavbarComponent } from './backend-navbar/backend-navbar.component';
+import { BackendLoginComponent } from './backend-login/backend-login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { NewsComponent } from './newsTable/newsTable.component';
     HomeLayoutComponent,
     ManagementLayoutComponent,
     CoursesComponent,
-    NewsComponent
+    NewsComponent,
+    BackendNavbarComponent,
+    BackendLoginComponent
   ],
   imports: [
     BrowserModule,
