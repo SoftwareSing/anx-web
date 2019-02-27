@@ -1,6 +1,7 @@
 {
   "rulesDirectory": [
-    "codelyzer"
+    "codelyzer",
+    "node_modules/tslint-microsoft-contrib"
   ],
   "extends": [
     "tslint:recommended",
@@ -9,6 +10,11 @@
   "defaultSeverity": "error",
   "jsRules": {},
   "rules": {
+    "max-func-args": [
+      true,
+      3
+    ],
+    "no-relative-imports": true,
     "import-blacklist": [
       true,
       "rxjs/Rx"
