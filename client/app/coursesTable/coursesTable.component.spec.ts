@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CoursesComponent } from './coursesTable.component';
+import { CoursesComponent } from 'client/app/coursesTable/coursesTable.component';
 
 describe('CoursesComponent', () => {
   let component: CoursesComponent;

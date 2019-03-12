@@ -3,10 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BackendLoginComponent } from 'client/app/backend-login/backend-login.component';
 import { CoursesComponent } from 'client/app/coursesTable/coursesTable.component';
+import { HomeComponent } from 'client/app/home/home.component';
+import { HomeLayoutComponent } from 'client/app/layout/home-layout/home-layout.component';
+import { ManagementLayoutComponent } from 'client/app/layout/management-layout/management-layout.component';
 import { NewsComponent } from 'client/app/newsTable/newsTable.component';
-import { HomeComponent } from './home/home.component';
-import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
-import { ManagementLayoutComponent } from './layout/management-layout/management-layout.component';
 
 const routes: Routes = [
   {

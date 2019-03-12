@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManagementLayoutComponent } from './management-layout.component';
+import { ManagementLayoutComponent } from 'client/app/layout/management-layout/management-layout.component';
 
 describe('ManagementLayoutComponent', () => {
   let component: ManagementLayoutComponent;
