@@ -10,4 +10,10 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
-/public/dist
+/public/assets
+/public/index.html
+/public/3rdpartylicenses.txt
+/public/main.*.js
+/public/polyfills.*.js
+/public/runtime.*.js
+/public/styles.*.css
