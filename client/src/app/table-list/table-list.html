@@ -1,0 +1,62 @@
+<div class="container ">
+  <div class="row row-card">
+    <div class="col-md-3">
+      <div class="card mb-3" *ngFor="let superCategory of superCategories">
+        <div class="card-header">
+          <h4>{{superCategory.name}}</h4>
+        </div>
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action" *ngFor="let category of superCategory.items"
+            [class.active]="category === selectedCategory" (click)="onSelect(category)" routerLink="./">
+            {{category.name}}
+            <span class="badge badge-secondary badge-pill">{{category.items.length}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="card">
+        <div class="card-header">
+          <h3>{{selectedCategory.name}}&nbsp;</h3>
+          <!-- search bar -->
+          <div class="input-group ">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="searchInput">
+                <span class="fas fa-search 5x" aria-hidden="true"></span>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="搜尋課程" aria-describedby="searchInput">
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="card-body">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th *ngFor="let title of tableTitle | keyvalue:withoutSort">{{title.value}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of selectedCategory.items">
+                <td *ngFor="let title of tableTitle | keyvalue:withoutSort;index as i">
+                  <span class="badge badge-primary" *ngIf="i===0; else linkBlock">
+                    {{item[title.key]}}
+                  </span>
+                  <ng-template #linkBlock>
+                    <a routerLink="#" *ngIf="i===1; else normalBlock">
+                      {{item[title.key]}}
+                    </a>
+                  </ng-template>
+                  <ng-template #normalBlock>
+                    {{item[title.key]}}
+                  </ng-template>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

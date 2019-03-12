@@ -1,17 +1,71 @@
 {
-    "extends": "../tslint.json",
-    "rules": {
-        "directive-selector": [
-            true,
-            "attribute",
-            "app",
-            "camelCase"
-        ],
-        "component-selector": [
-            true,
-            "element",
-            "app",
-            "kebab-case"
-        ]
-    }
+  "rulesDirectory": [
+    "codelyzer",
+    "node_modules/tslint-microsoft-contrib"
+  ],
+  "extends": [
+    "tslint:recommended",
+    "tslint-clean-code"
+  ],
+  "defaultSeverity": "error",
+  "jsRules": {},
+  "rules": {
+    "max-func-args": [
+      true,
+      3
+    ],
+    "no-relative-imports": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-use-before-declare": true,
+    "no-output-on-prefix": true,
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
+    "no-input-rename": true,
+    "no-output-rename": true,
+    "use-life-cycle-interface": true,
+    "use-pipe-transform-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true,
+    "await-promise": true,
+    "no-invalid-template-strings": true,
+    "no-console": false,
+    "no-for-in-array": true,
+    "no-default-export": true,
+    "no-duplicate-imports": true,
+    "encoding": true,
+    "interface-name": false,
+    "no-consecutive-blank-lines": [
+      true,
+      5
+    ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-trailing-underscore"
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "object-literal-sort-keys": false,
+    "member-access": false
+  }
 }
