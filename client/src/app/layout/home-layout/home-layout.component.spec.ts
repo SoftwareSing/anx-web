@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeLayoutComponent } from 'client/app/layout/home-layout/home-layout.component';
+import { HomeLayoutComponent } from '~/app/layout/home-layout/home-layout.component';
 
 describe('HomeLayoutComponent', () => {
   let component: HomeLayoutComponent;

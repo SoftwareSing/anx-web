@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavbarComponent } from 'client/app/navbar/navbar.component';
+import { NavbarComponent } from '~/app/navbar/navbar.component';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;

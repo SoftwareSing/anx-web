@@ -1,6 +1,6 @@
 
-import { Category } from 'client/app/model/category';
-import { Course } from 'client/app/model/course';
+import { Category } from '~/app/model/category';
+import { Course } from '~/app/model/course';
 
 export class FakeTableData {
   coursesA: Course[] = [

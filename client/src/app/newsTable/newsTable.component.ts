@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { FakeTableDataTwo } from 'client/app/fakeTableData2';
-import { News } from 'client/app/model/new';
-import { TableListComponent } from 'client/app/table-list/table-list.component';
+import { FakeTableDataTwo } from '~/app/fakeTableData2';
+import { News } from '~/app/model/new';
+import { TableListComponent } from '~/app/table-list/table-list.component';
 
 @Component({
   selector: 'app-news',

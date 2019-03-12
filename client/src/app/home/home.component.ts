@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Image } from 'client/app/SilderImage';
+import { Image } from '~/app/SilderImage';
 
 @Component({
   selector: 'app-home',

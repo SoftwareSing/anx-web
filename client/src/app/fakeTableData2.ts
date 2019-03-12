@@ -1,6 +1,6 @@
 
-import { Category } from 'client/app/model/category';
-import { News } from 'client/app/model/new';
+import { Category } from '~/app/model/category';
+import { News } from '~/app/model/new';
 
 export class FakeTableDataTwo {
   newsA: News[] = [

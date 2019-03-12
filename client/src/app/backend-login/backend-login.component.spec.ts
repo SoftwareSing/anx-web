@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BackendLoginComponent } from 'client/app/backend-login/backend-login.component';
+import { BackendLoginComponent } from '~/app/backend-login/backend-login.component';
 
 describe('BackendLoginComponent', () => {
   let component: BackendLoginComponent;

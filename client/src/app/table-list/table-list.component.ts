@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from 'client/app/model/category';
+import { Category } from '~/app/model/category';
 
 export class TableListComponent<T> implements OnInit {
   superCategories: Array<Category<Category<T>>>; // 只需要抓取最大的類別，就可以得到courses的所有類別及內容
