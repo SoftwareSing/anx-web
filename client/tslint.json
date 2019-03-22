@@ -1,6 +1,7 @@
 {
   "rulesDirectory": [
     "codelyzer",
+    "node_modules/tslint-eslint-rules/dist/rules",
     "node_modules/tslint-microsoft-contrib"
   ],
   "extends": [
@@ -10,6 +11,19 @@
   "defaultSeverity": "error",
   "jsRules": {},
   "rules": {
+    "ter-indent": [
+      true,
+      2,
+      {
+        "SwitchCase": 1,
+        "MemberExpression": 1
+      }
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
     "max-func-args": [
       true,
       3

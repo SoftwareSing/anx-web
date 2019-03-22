@@ -10,7 +10,7 @@ describe('ManagementLayoutComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ ManagementLayoutComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
