@@ -10,7 +10,7 @@ describe('BackendNavbarComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ BackendNavbarComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

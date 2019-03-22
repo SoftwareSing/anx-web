@@ -3,6 +3,6 @@
 */
 
 export class Category<T> {
-    name: string;
-    items: T[];
+  name: string;
+  items: T[];
 }
