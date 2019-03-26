@@ -56,6 +56,12 @@
         "phpcs": [
             "vendor\\bin\\phpcs . --standard=psr2 --ignore=vendor --colors"
         ],
+        "linux-test": [
+            "@linux-phpcs"
+        ],
+        "linux-phpcs": [
+            "./vendor/bin/phpcs . --standard=psr2 --ignore=vendor --colors"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
