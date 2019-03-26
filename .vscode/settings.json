@@ -12,6 +12,10 @@
     "editor.tabSize": 4
   },
   "phpcs.enable": true,
-  "phpcs.executablePath": "server\\vendor\\bin\\phpcs",
-  "phpcs.standard": "PSR2"
+  "phpcs.executablePath": "server/vendor/bin/phpcs",
+  "phpcs.standard": "PSR2",
+  "php-cs-fixer.executablePath": "${workspaceRoot}\\server\\vendor\\bin\\php-cs-fixer",
+  "php-cs-fixer.executablePathWindows": "${workspaceRoot}\\server\\vendor\\bin\\php-cs-fixer.bat",
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR2"
 }
