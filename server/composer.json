@@ -54,16 +54,16 @@
             "@phpcs"
         ],
         "phpcs": [
-            "vendor\\bin\\phpcs . --standard=psr2 --ignore=vendor,*.js,*.css --colors"
+            "vendor\\bin\\phpcs . --standard=psr2 --ignore=vendor,bootstrap\\cache,*.js,*.css --colors"
         ],
         "phpcbf": [
-          "vendor\\bin\\phpcbf . --standard=psr2 --ignore=vendor,*.js,*.css"
+          "vendor\\bin\\phpcbf . --standard=psr2 --ignore=vendor,bootstrap\\cache,*.js,*.css"
         ],
         "linux-test": [
             "@linux-phpcs"
         ],
         "linux-phpcs": [
-            "./vendor/bin/phpcs . --standard=psr2 --ignore=vendor,*.js,*.css --colors"
+            "./vendor/bin/phpcs . --standard=psr2 --ignore=vendor,bootstrap/cache,*.js,*.css --colors"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
