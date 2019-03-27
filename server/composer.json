@@ -16,10 +16,12 @@
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.14",
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^7.5",
+        "squizlabs/php_codesniffer": "^3.4"
     },
     "config": {
         "optimize-autoloader": true,
@@ -48,6 +50,21 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
+        "test": [
+            "@phpcs"
+        ],
+        "phpcs": [
+            "vendor\\bin\\phpcs . --standard=psr2 --ignore=vendor,bootstrap\\cache,*.js,*.css --colors"
+        ],
+        "phpcbf": [
+          "vendor\\bin\\phpcbf . --standard=psr2 --ignore=vendor,bootstrap\\cache,*.js,*.css"
+        ],
+        "linux-test": [
+            "@linux-phpcs"
+        ],
+        "linux-phpcs": [
+            "./vendor/bin/phpcs . --standard=psr2 --ignore=vendor,bootstrap/cache,*.js,*.css --colors"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"

@@ -1,5 +1,5 @@
 <?php
-
+// phpcs:disable
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

@@ -1,4 +1,21 @@
 {
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
   "typescript.tsdk": "client\\node_modules\\typescript\\lib",
-  "typescript.preferences.importModuleSpecifier": "non-relative"
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "[php]": {
+    "editor.tabSize": 4
+  },
+  "phpcs.enable": true,
+  "phpcs.executablePath": "server/vendor/bin/phpcs",
+  "phpcs.standard": "PSR2",
+  "php-cs-fixer.executablePath": "${workspaceRoot}\\server\\vendor\\bin\\php-cs-fixer",
+  "php-cs-fixer.executablePathWindows": "${workspaceRoot}\\server\\vendor\\bin\\php-cs-fixer.bat",
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR2"
 }

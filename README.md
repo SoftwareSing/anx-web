@@ -4,6 +4,16 @@
 
 
 ## 開發
+使用vscode做編輯器，已針對vscode做設定，其餘編輯器需自行設定
+
+### vscode-plugins
+**以下plugin必須安裝以確保coding style一致**
+
+[phpcs](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs)
+
+[php cs fixer](https://marketplace.visualstudio.com/items?itemName=junstyle.php-cs-fixer)
+
+[TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
 
 ### 安裝
 在 [client](client) 資料夾下執行 `npm install`
@@ -18,7 +28,12 @@
 
 
 ### 測試
-完成 `client` 編譯後，在 [server](server) 資料夾下透過 `php artisan serve` 來測試server是否正常運作
+在 [client](client) 資料夾下執行 `npm test`
+
+在 [server](server) 資料夾下執行 `composer test`
+
+### 預覽
+完成 `client` 編譯後，在 [server](server) 資料夾下透過 `php artisan serve` 來預覽server是否正常運作
 
 
 
@@ -49,9 +64,19 @@ tslint是檢查typescript coding style的工具
 [eslint](http://eslint.cn/) (eslint有小部分相同規則可參考)
 
 
-## 測試
-目前的測試只有tslint，之後可能增加
+## PSR2
+PSR2是目前採用php風格規範
 
-可以在[client](client)資料夾下透過指令 `npm test` 執行測試
+由於php規則過於複雜，暫時不考慮自寫一套規則
+
+PSR2的規範可以參考以下連結
+
+https://www.php-fig.org/psr/psr-2/
+
+https://oomusou.io/php/php-psr2/
+
+
+## 自動測試
+目前的自動測試只有針對coding style做檢查，之後可能增加
 
 每次發送 merge request 時將會自動測試
